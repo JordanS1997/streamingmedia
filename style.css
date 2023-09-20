@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #020659;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*--------------------------------- Navbar Section Start -----------------------------*/
+
+nav {
+    background-color: #020873;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 3.2rem;
+    /* margin-bottom: 10px; */
+    /* border: black 1px solid; */
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    /* ------------- */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+li,
+a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    flex: auto;
+    display: inline-block;
+    margin-top: 0.2rem;
+    /* border: black 1px solid; */
+}
+
+.nFlex a:hover {
+    color: #590242;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 500;
+    margin-right: 3px;
+    margin-left: 10px;
+    /* border: black 1px solid; */
+}
+
+.nFlex {
+    text-align: center;
+    padding-top: 0.2rem;
+    /* border: black 1px solid; */
+}
+
+.navImg {
+    padding-top: 5px;
+    float: right;
+    margin-right: 70px;
+    position: sticky;
+    /* border: black 1px solid; */
+}
+
+/*--------------------------------- Hero Section Start --------------------------------------*/
+
+#smoothJazz {
+    background: linear-gradient(to right, #030ABC 10%, #020873 30%, black);
+    padding: 10px 35px;
+
+}
+
+#smoothJazz h1 {
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 10px;
+    /* border: black 1px solid; */
+}
+
+#smoothJazz p {
+    color: white;
+}
+
+/* ---------------------------------Trending Songs------------------------------------------- */
+#tSongs {
+    background-color: white;
+    padding: 25px 10px 70px 10px;
+
+}
+
+#tFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: -10px;
+}
+
+.item {
+    margin: 10px;
+}
+
+#tSongs h2 {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#tSongs h3 {
+    margin-top: 85px;
+    padding-top: 0.4rem;
+    color: #590242;
+    background-color: rgba(205, 197, 197, 0.591);
+    padding-left: 10px;
+    padding-bottom: 5px;
+    width: 18.8rem;
+}
+
+#tSongs p {
+    background-color: rgba(205, 197, 197, 0.591);
+    color: #590242;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    width: 18.8rem;
+}
+
+
+#tSongs audio {
+    margin-top: 112px
+}
+
+#trending1 {
+    background-image: url(images/aloma-cover.png);
+    background-repeat: no-repeat;
+}
+
+#trending2 {
+    background-image: url(images/my-road-cover.png);
+    background-repeat: no-repeat;
+}
+
+#trending3 {
+    background-image: url(images/papaya-cover.png);
+    background-repeat: no-repeat;
+}
+
+#trending4 {
+    background-image: url(images/smoothies-cover.png);
+    background-repeat: no-repeat;
+}
+
+#trending5 {
+    background-image: url(images/successful-performance-cover.png);
+    background-repeat: no-repeat;
+}
+
+
+#tSongs button {
+    margin-top: 20px;
+    float: right;
+}
+
+/* ----------------------------------Your Playlists------------------------------------------- */
+#yPlaylists{
+    background-color: #ffffff;
+    width: fit-content;
+}
+
+#yGrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 100px 100px 100px;
+    gap: 3rem;
+    border: black 1px solid;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.container{
+    display: flex;
+}
+
+
+#yPlay{
+width: aut;/
+}
+
+
+/* ----------------------------------Curated Playlists---------------------------------------- */
+
+
+/* ----------------------------------Default Styles------------------------------------------- */
+h1 {
+    font-size: 1.25em;
+    color: #590242;
+}
+
+h2,
+h3 {
+    font-size: 1em;
+    color: #590242;
+}
+
+button {
+    color: white;
+    background-color: #590242;
+    border-radius: 8%;
+    border: 0;
+    padding: 5px;
+    width: 12em;
+    height: 2rem;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+button:hover {
+    background-color: #020659;
+}
+
+p dl dd {
+    font-size: 1em;
+}
+
+footer p {
+    font-size: .75em;
+}
+
+/* ---------------------------------Included CSS----------------------------------------- */
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+
+label span:before,
+label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+label span:before {
+    top: 5px;
+}
+
+label span:after {
+    top: -5px;
+}
+
+input {
+    display: none;
+}
+
+input:checked~ul {
+    max-height: 500px;
+}
+
+input:checked~label span {
+    background: transparent;
+}
+
+input:checked~label span:before {
+    transform: rotate(-45deg);
+}
+
+input:checked~label span:after {
+    transform: rotate(45deg);
+}
+
+input:checked~label:not(.steps) span:before,
+input:checked~label:not(.steps) span:after {
+    top: 0;
+}
+
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    label span,
+    input {
+        display: none;
+    }
+
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: white;
+    border-radius: 100%;
+
+}
+
+audio::-webkit-media-controls-play-button {
+    border-radius: 100%;
+    background-color: white;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background-color: rgba(202, 199, 199, 0.491);
+}
+
+
+
+/* couldn't get this to work */
+#tFlex::-webkit-scrollbar {
+    
+}
+
+#tFlex::-webkit-scrollbar-track {
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #590242;
+
+}
+
+#tFlex ::-webkit-scrollbar-thumb:hover {}
+
+#playlists ::-webkit-scrollbar,
+#curated ::-webkit-scrollbar {}
+
+#playlists ::-webkit-scrollbar-track,
+#curated ::-webkit-scrollbar-track {}
+
+#playlists ::-webkit-scrollbar-thumb,
+#curated ::-webkit-scrollbar-thumb {}
+
+#playlists ::-webkit-scrollbar-thumb:hover,
+#curated ::-webkit-scrollbar-thumb:hover {}
