@@ -173,15 +173,36 @@ a {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     gap: 3rem;
-    border: black 1px solid;
     overflow-x: auto;
     white-space: nowrap;
+    background-color: #2699FB;
+    
 }
 
 .container{
     display: flex;
+    border: black 1px solid;
+    width: fit-content;
 }
 
+.container h3{
+    margin-top:40px;
+    text-align: center;
+    color: white;
+
+}
+
+.container p{
+    text-wrap: wrap;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container img{
+    margin-left: 15px;
+    margin-top: 15px;
+}
 
 
 /* ----------------------------------Curated Playlists---------------------------------------- */
