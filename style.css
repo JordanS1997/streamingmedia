@@ -171,8 +171,7 @@ a {
 
 #yGrid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: repeat(1, 2fr);
     gap: 3rem;
     border: black 1px solid;
     overflow-x: auto;
@@ -183,10 +182,6 @@ a {
     display: flex;
 }
 
-
-#yPlay{
-width: aut;/
-}
 
 
 /* ----------------------------------Curated Playlists---------------------------------------- */
