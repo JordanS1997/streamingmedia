@@ -171,17 +171,17 @@ a {
 
 #yGrid{
     display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    gap: 3rem;
-    overflow-x: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    overflow-y: auto;
     white-space: nowrap;
     background-color: #2699FB;
-    
+    /* width: fit-content; */
 }
 
 .container{
     display: flex;
-    border: black 1px solid;
+    /* border: black 1px solid; */
     width: fit-content;
 }
 
@@ -197,6 +197,7 @@ a {
     color: white;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
 }
 
 .container img{
@@ -204,6 +205,9 @@ a {
     margin-top: 15px;
 }
 
+#yPlaylists button{
+    /* background-color: #2699FB; */
+}
 
 /* ----------------------------------Curated Playlists---------------------------------------- */
 
